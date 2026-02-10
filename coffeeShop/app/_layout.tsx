@@ -20,12 +20,13 @@ export default function RootLayout() {
   const Tab = createBottomTabNavigator();
 
   return (
-    <Tab.Navigator screenOptions={{  tabBarActiveTintColor: '#fff',
-      tabBarInactiveTintColor: '#ddd', 
-      tabBarStyle: { 
-        backgroundColor: '#DAAE80', 
-        width: '90%', 
-        height: '10%', 
+    <Tab.Navigator screenOptions={{
+      tabBarActiveTintColor: '#fff',
+      tabBarInactiveTintColor: '#ddd',
+      tabBarStyle: {
+        backgroundColor: '#DAAE80',
+        width: '90%',
+        height: '10%',
         borderRadius: 150,
         position: 'absolute',
         bottom: 20,
@@ -43,14 +44,16 @@ export default function RootLayout() {
       },
       tabBarBackground: () => <View style={{ flex: 1, backgroundColor: 'transparent' }} />,
     }}>
-      <Tab.Screen name="Home" component={HomeScreen} options={{headerShown: false , tabBarIcon: ({ color, size }) =>
-       <Feather
-      name={'home'}
-      size={size}
-      color={color}
-    /> }} />
-      <Tab.Screen name="Detail" component={DetailScreen} options={{headerShown: false}} />
-      <Tab.Screen name="Cart" component={CartScreen} options={{headerShown: false}} />
+      <Tab.Screen name="Home" component={HomeScreen} options={{
+        headerShown: false, tabBarIcon: ({ color, size }) =>
+          <Feather
+            name={'home'}
+            size={size}
+            color={color}
+          />
+      }} />
+      <Tab.Screen name="Detail" component={DetailScreen} options={{ headerShown: false }} />
+      <Tab.Screen name="Cart" component={CartScreen} options={{ headerShown: false }} />
     </Tab.Navigator>
 
   );
