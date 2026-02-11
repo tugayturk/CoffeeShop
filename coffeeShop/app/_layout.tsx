@@ -51,10 +51,10 @@ export default function RootLayout() {
               color={color}
             />
         }} />
-        <Tab.Screen name="Detail" component={DetailScreen} options={{
+        {/* <Tab.Screen name="Detail" component={DetailScreen} options={{
           headerShown: false, tabBarIcon: ({ color, size }) =>
             <MaterialCommunityIcons name="coffee" size={size} color={color} />
-        }} />
+        }} /> */}
         <Tab.Screen name="Cart" component={CartScreen} options={{
           headerShown: false, tabBarIcon: ({ color, size }) =>
             <AntDesign name="shopping-cart" size={size} color={color} />

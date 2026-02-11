@@ -1,10 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, useWindowDimensions, View} from 'react-native'
 import React from 'react'
 
+
+
 const CartScreen = () => {
+
+  const { width, height } = useWindowDimensions();
+
   return (
-    <View>
-      <Text>Cart</Text>
+    <View style={{ width: width * 0.8 }} className='mt-10' >
+        <Text>CoffeeCard</Text>
     </View>
   )
 }
