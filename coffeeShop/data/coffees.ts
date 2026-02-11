@@ -26,7 +26,7 @@ export interface Coffee {
       name: "Filter Coffee",
       description: "Slow brewed filter coffee",
       price: 70,
-      image: require("../assets/images/filtercoffee.png"),
+      image: require("../assets/images/filter.png"),
     },
     {
       id: "4",

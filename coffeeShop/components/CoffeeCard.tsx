@@ -2,16 +2,17 @@ import { StyleSheet, Text, useWindowDimensions, View, Image, TouchableOpacity } 
 import React from 'react'
 import { coffees } from '../data/coffees';
 import { useNavigation } from '@react-navigation/native';
+import { router } from 'expo-router';
 
 
 const CoffeeCard = ({ item}: { item: typeof coffees[0] }) => {
 
   const { width, height } = useWindowDimensions();
-  const navigation = useNavigation<any>();
+
 
   return (
     <TouchableOpacity activeOpacity={0.8} style={{ width: width * 0.8 }} className='mt-10'
-     onPress={() => navigation.navigate('Detail', { id: item.id })} >
+     onPress={() => router.push(`/detail/${item.id}`)} >
 
       <View className='flex items-center justify-between  bg-[#DAAE80] p-4 rounded-2xl w-[90%] '>
         <View className='flex-row items-center justify-between '>
