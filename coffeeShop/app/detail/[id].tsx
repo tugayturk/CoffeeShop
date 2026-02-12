@@ -1,4 +1,4 @@
-import { View, Text, Image, TextInput, useWindowDimensions, StatusBar, FlatList, TouchableOpacity } from 'react-native'
+import { View, Text, Image, useWindowDimensions, StatusBar, FlatList, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { Coffee, coffees } from '../../data/coffees';

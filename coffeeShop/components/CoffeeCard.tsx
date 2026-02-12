@@ -1,7 +1,6 @@
 import { StyleSheet, Text, useWindowDimensions, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { coffees } from '../data/coffees';
-import { useNavigation } from '@react-navigation/native';
 import { router } from 'expo-router';
 
 
